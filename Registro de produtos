@@ -1,0 +1,54 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled4.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyPIPgkuBkM3E5r49gYkn0mp",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/melissang7/ExerciciosPythonMelissa/blob/main/Registro%20de%20produtos\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "5EmJ911XxaJh"
+      },
+      "outputs": [],
+      "source": [
+        "#2. Crie um programa que funcione como o registro de vendas de uma empresa.O\n",
+        "#usuário deve inserir o nome do produto e o produto deve ser adicionado na lista de\n",
+        "#venda. Enquanto o usuário não encerrar o programa, significa que ele está\n",
+        "#registrando novos produtos, então o programa deve permitir e entrada de novos produtos.\n",
+        "\n",
+        "produto = input('Insira um produto aqui. Para cancelar o registro de um novo produto, clique em Enter com a caixa vazia: ')\n",
+        "vendas = []\n",
+        "\n",
+        "while produto != '':\n",
+        "    vendas.append(produto)\n",
+        "    produto = input('Insira um produto aqui. Para cancelar o registro de um novo produto, clique em Enter com a caixa vazia: ')\n",
+        "\n",
+        "print('Registro Finalizado. As vendas cadastradas foram: {}'.format(vendas))"
+      ]
+    }
+  ]
+}
