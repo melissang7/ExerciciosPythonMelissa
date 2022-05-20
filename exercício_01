@@ -1,0 +1,55 @@
+
+import pandas as pd
+
+nomes = []
+idades = []
+cpfs = []
+bairros = []
+estados = []
+cidades = []
+
+
+b = input("deseja iniciar? ")
+
+while b == 'sim':
+    nome = input("Nome: ")
+    nomes.append(nome)
+
+
+    idade = input('Idade: ')
+    idades.append(idade)
+
+
+    cpf = input('CPF: ')
+    cpfs.append(cpf)
+
+
+    bairro = input('Bairro: ')
+    bairros.append(bairro)
+
+    cidade = input('Cidade: ')
+    cidades.append(cidade)
+
+
+    estado = input('Estado: ')
+    estados.append(estado)
+
+
+    b = input("deseja continuar? ")
+
+while b != 'nao':
+    infos.append(usuario)
+    usuario = input('Insira suas informações: ')
+
+
+cadastro = pd.DataFrame({
+        'Nome': nomes,
+        'Idade': idades,
+        'CPF': cpfs,
+        'Cidade': cidades,
+        'Estado': estados
+
+})
+
+cadastro.to_csv(r'C:\Users\aluno10\Documents\melissa\aula_01_modulo_03\cadastro.csv', index=False)
+print('Informações adicionadas'.format(infos))
